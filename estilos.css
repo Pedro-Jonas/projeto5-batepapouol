@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+.topo {
+    height: 80px;  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+.barra {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+.topo img {
+    width: 75px;
+    height: 53px;
+    margin-left: 22px;
+}
+ion-icon {
+    width: 42px;
+    height: 30px;
+    margin-right: 22px;
+}
+.mensagens{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.caixa{
+    min-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+    align-items: center;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.entrou{
+    background-color: #DCDCDC;
+}
+.reservado{
+    background-color: #FFDEDE;
+}
+input {
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    margin-left: 17px;
+    outline: none;
+}
+input::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+}
