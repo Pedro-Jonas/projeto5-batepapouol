@@ -49,3 +49,22 @@ function atualizarmensagens(){
     const novobloco = document.querySelector(".mensagens")
     novobloco.scrollIntoView({block: "end"})
 }
+function enviarmensagem(){
+    const textomensagem = document.querySelector(".escrito").value;
+    const novamensagem = {
+            from: `${nome.name}`,
+            to: "Todos",
+            text: `${textomensagem}`,
+            type: "message",
+    }
+    let promessa = axios.post("https://mock-api.driven.com.br/api/v6/uol/messages", novamensagem)
+    promessa.then(renderizarmensagens)
+    promessa.catch(atualizarpagina)
+}
+
+function atualizarpagina(erro){
+    let tipo = erro.response.status
+    if (tipo !== 400){
+        window.location.reload()
+    }
+}
